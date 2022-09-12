@@ -1,0 +1,77 @@
+body {
+    background-color: white;
+}
+
+.interior {
+    max-width: 600px;
+    margin: auto;
+    padding: 5px 15px;
+}
+
+.name,
+.email,
+.message {
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid;
+    color: black;
+    padding: 15px 6px;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.name {
+    float: left;
+    width: 270px;
+}
+
+.email {
+    float: right;
+    width: 270px;
+}
+
+.message {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.btn1 {
+    width: 150px;
+    height: 50px;
+    background: none;
+    border: 2px solid;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn1::before,
+.btn1::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 4px;
+    background: white;
+    transform: skewX(50deg);
+    transition: .4s linear;
+}
+
+.btn1::before {
+    top: -4px;
+    left: 10%;
+}
+
+.btn1::after {
+    bottom: -4px;
+    right: 10%;
+}
+
+.btn1:hover::before {
+    left: 80%;
+}
+
+.btn1:hover::after {
+    right: 80%;
+}
